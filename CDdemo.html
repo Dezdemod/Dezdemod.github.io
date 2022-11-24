@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Color Detection</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/CDstyle.css" />
+    <link rel="icon" href="images/CDlogo.png" type="image/x-icon" />
+</head>
+<body>
+    <h1 id="projectName">Color Detection</h1>
+    <h2 id="about">About</h2>
+    <br />
+    <p id="desc">
+        - Project uses the OpenCV library and makes use of its components to detect
+        moving balls that pop-up while the game is running, based on their color.
+        <br /><br />
+        - It works by capturing the game window then storing that information in an 
+        image container. The processed frame that gives the information on where 
+        to detect the balls is used in drawing the rectangles around the objects on 
+        a copy of the unprocessed frame.
+        <br /><br />
+        - It uses different rectangle colors that match the colors on the balls so
+        it's easier to comprehend the distinction that it makes between objects.
+    </p>
+    <br />
+    <center>
+        <video id="demoVid" controls>
+            <source src="videos/demo3.mp4" type="video/mp4" />
+        </video>
+    </center>
+</body>
+</html>
